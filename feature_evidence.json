@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-save-the-uploaded-voxa-logo-image-white-abstract-v-shaped-mark-with-purple-shadow-on-black-background-as-a-static-asset-at-frontend-public-assets-generated-voxa-logo-png-and-render-it-in-the-hero-section-herosection-tsx-in-place-of-the-current-svg-sound-wave-icon-displayed-at-an-appropriate-size-e-g-64-64-px-next-to-the-voxa-wordmark",
+      "featureTitle": "Save the uploaded VOXA logo image (white abstract V-shaped mark with purple shadow on black background) as a static asset at frontend/public/assets/generated/voxa-logo.png and render it in the Hero section (HeroSection.tsx) in place of the current SVG sound-wave icon, displayed at an appropriate size (e.g., 64×64 px) next to the 'VOXA' wordmark.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-also-display-the-voxa-logo-image-voxa-logo-png-in-the-sticky-navigation-bar-alongside-the-voxa-brand-name-replacing-any-existing-svg-icon-used-there-at-a-small-size-appropriate-for-a-navbar-e-g-32-32-px",
+      "featureTitle": "Also display the VOXA logo image (voxa-logo.png) in the sticky Navigation bar alongside the 'VOXA' brand name, replacing any existing SVG icon used there, at a small size appropriate for a navbar (e.g., 32×32 px).",
+      "files": [
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-30"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

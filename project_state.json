@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Single-page scrolling landing page for VOXA app introduction — an anonymous emotional support platform for youth. Modern dark theme with purple/blue gradient, animated particles, sticky nav, 10 content sections covering youth mental health problems/solutions/app intro/features/how it helps/tech/roadmap/revenue/extra info/contact, built in pure HTML/CSS/JS.",
+  "architectural_notes": [
+    "Single HTML file with embedded CSS and JS, no external frameworks or libraries",
+    "Intersection Observer API used for scroll-reveal animations and active nav highlighting",
+    "Particle animation uses Canvas API with connected-node effect in hero section"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Crop to tight bounds around the white abstract V-shaped mark with purple shadow, removing the black background, and export with a transparent background (IMG_20260208_191015_825.webp > voxa-logo.dim_256x256.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-full-screen-hero-section-at-the-top-of-the-landing-page-featuring-the-novamind-app-name-with-a-stylized-brain-spark-svg-icon-a-bold-tagline-empowering-the-next-generation-two-cta-buttons-learn-more-and-get-started-and-a-dark-gradient-background-with-css-animated-floating-geometric-shapes-or-particles",
+      "title": "Create a full-screen Hero section at the top of the landing page featuring: the 'NovaMind' app name with a stylized brain/spark SVG icon, a bold tagline ('Empowering the Next Generation'), two CTA buttons ('Learn More' and 'Get Started'), and a dark gradient background with CSS-animated floating geometric shapes or particles.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-navigation-bar-that-lists-all-10-sections-plus-the-hero-the-nav-should-highlight-the-currently-visible-section-as-the-user-scrolls-using-intersection-observer-api-include-smooth-scroll-behavior-when-nav-links-are-clicked",
+      "title": "Implement a sticky navigation bar that lists all 10 sections plus the hero. The nav should highlight the currently visible section as the user scrolls, using Intersection Observer API. Include smooth scroll behavior when nav links are clicked.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-scroll-progress-indicator-top-bar-or-side-dots-that-visually-shows-how-far-the-user-has-scrolled-through-the-page",
+      "title": "Add a scroll progress indicator (top bar or side dots) that visually shows how far the user has scrolled through the page.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-1-problem-among-this-generation-display-statistics-and-pain-points-for-today-s-youth-mental-health-distraction-lack-of-focus-using-large-bold-numbers-inline-svg-or-emoji-icons-and-a-visually-engaging-layout-with-cards-or-stat-blocks",
+      "title": "Build Section 1 – 'Problem Among This Generation': Display statistics and pain points for today's youth (mental health, distraction, lack of focus) using large bold numbers, inline SVG or emoji icons, and a visually engaging layout with cards or stat blocks.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-2-solution-of-this-problem-show-how-novamind-addresses-youth-challenges-using-a-clean-layout-with-checkmark-icons-or-numbered-steps",
+      "title": "Build Section 2 – 'Solution of This Problem': Show how NovaMind addresses youth challenges using a clean layout with checkmark icons or numbered steps.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-3-introducing-the-app-provide-an-app-overview-with-a-phone-frame-mockup-placeholder-css-styled-phone-outline-with-a-placeholder-app-ui-inside-and-a-brief-description-of-novamind",
+      "title": "Build Section 3 – 'Introducing the App': Provide an app overview with a phone frame mockup placeholder (CSS-styled phone outline with a placeholder app UI inside), and a brief description of NovaMind.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-4-app-features-display-4-6-feature-cards-in-a-responsive-grid-each-with-an-inline-svg-or-emoji-icon-a-feature-title-and-a-short-description",
+      "title": "Build Section 4 – 'App Features': Display 4–6 feature cards in a responsive grid, each with an inline SVG or emoji icon, a feature title, and a short description.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-5-how-this-app-will-help-youngsters-show-benefits-targeting-ages-15-25-using-a-timeline-layout-or-benefit-cards-highlighting-impact-areas",
+      "title": "Build Section 5 – 'How This App Will Help Youngsters': Show benefits targeting ages 15–25 using a timeline layout or benefit cards highlighting impact areas.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-6-how-this-app-is-made-display-the-tech-stack-with-inline-svg-or-emoji-logos-for-technologies-react-node-js-ai-ml-etc-and-a-brief-description-of-the-development-process",
+      "title": "Build Section 6 – 'How This App Is Made': Display the tech stack with inline SVG or emoji logos for technologies (React, Node.js, AI/ML, etc.) and a brief description of the development process.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-7-features-future-goals-display-a-roadmap-timeline-showing-current-features-left-top-versus-upcoming-planned-features-right-bottom-clearly-differentiated-visually",
+      "title": "Build Section 7 – 'Features & Future Goals': Display a roadmap timeline showing current features (left/top) versus upcoming planned features (right/bottom), clearly differentiated visually.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-8-potential-revenue-display-market-size-statistics-revenue-model-breakdown-freemium-subscriptions-ads-using-css-only-bar-or-pie-chart-representations-and-growth-potential-callouts",
+      "title": "Build Section 8 – 'Potential & Revenue': Display market size statistics, revenue model breakdown (freemium, subscriptions, ads) using CSS-only bar or pie chart representations, and growth potential callouts.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-9-extra-information-include-a-team-placeholder-section-avatar-circles-with-name-role-placeholders-a-testimonials-placeholder-carousel-or-cards-and-a-functional-faq-accordion-click-to-expand-collapse-answers",
+      "title": "Build Section 9 – 'Extra Information': Include a team placeholder section (avatar circles with name/role placeholders), a testimonials placeholder carousel or cards, and a functional FAQ accordion (click to expand/collapse answers).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-section-10-web-link-contact-final-cta-section-with-a-website-url-placeholder-social-media-icon-links-twitter-linkedin-instagram-using-inline-svgs-a-newsletter-email-signup-input-with-submit-button-and-a-site-footer",
+      "title": "Build Section 10 – 'Web Link / Contact': Final CTA section with a website URL placeholder, social media icon links (Twitter, LinkedIn, Instagram using inline SVGs), a newsletter email signup input with submit button, and a site footer.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-intersection-observer-based-scroll-reveal-animations-sections-and-key-elements-should-animate-into-view-fade-in-slide-up-or-scale-as-they-enter-the-viewport-apply-floating-css-keyframe-animations-to-select-decorative-elements-in-the-hero-and-other-sections",
+      "title": "Implement Intersection Observer-based scroll reveal animations: sections and key elements should animate into view (fade-in, slide-up, or scale) as they enter the viewport. Apply floating CSS keyframe animations to select decorative elements in the hero and other sections.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-dark-theme-with-deep-navy-charcoal-backgrounds-vibrant-purple-to-blue-gradient-accents-on-headings-buttons-highlights-and-borders-use-a-modern-sans-serif-typography-system-with-varied-font-weights-to-create-visual-hierarchy-ensure-full-mobile-responsiveness-across-all-sections",
+      "title": "Apply a cohesive dark theme with deep navy/charcoal backgrounds, vibrant purple-to-blue gradient accents on headings, buttons, highlights, and borders. Use a modern sans-serif typography system with varied font weights to create visual hierarchy. Ensure full mobile responsiveness across all sections.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebrand-the-hero-section-replace-all-novamind-references-with-voxa-update-the-tagline-to-reflect-voxa-s-mission-as-a-safe-and-anonymous-emotional-support-platform-for-youth-and-update-the-brain-spark-svg-icon-to-something-more-fitting-e-g-a-heart-or-voice-sound-wave-icon-update-cta-buttons-if-needed-to-match-the-new-brand-tone",
+      "title": "Rebrand the Hero section: replace all 'NovaMind' references with 'VOXA', update the tagline to reflect VOXA's mission as a safe and anonymous emotional support platform for youth, and update the brain/spark SVG icon to something more fitting (e.g., a heart or voice/sound wave icon). Update CTA buttons if needed to match the new brand tone.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-sticky-navigation-bar-labels-and-section-titles-throughout-the-page-to-reflect-the-new-voxa-section-names-problems-among-youth-solutions-introducing-voxa-how-voxa-solves-these-problems-voxa-features-how-we-made-voxa-future-goals-upcoming-features-potential-revenue-more-information-about-voxa-and-voxa-links",
+      "title": "Update the sticky navigation bar labels and section titles throughout the page to reflect the new VOXA section names: 'Problems Among Youth', 'Solutions', 'Introducing VOXA', 'How VOXA Solves These Problems', 'VOXA Features', 'How We Made VOXA', 'Future Goals & Upcoming Features', 'Potential & Revenue', 'More Information About VOXA', and 'VOXA Links'.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-1-problems-among-youth-to-display-the-following-15-youth-pain-points-as-visual-cards-or-stat-blocks-with-icons-loneliness-depression-anxiety-overthinking-relationship-heartbreak-toxic-friendships-career-confusion-fear-of-failure-family-pressure-social-comparison-low-self-esteem-lack-of-emotional-support-identity-crisis-phone-addiction-suicidal-thoughts",
+      "title": "Update Section 1 (Problems Among Youth) to display the following 15 youth pain points as visual cards or stat blocks with icons: Loneliness, Depression, Anxiety, Overthinking, Relationship heartbreak, Toxic friendships, Career confusion, Fear of failure, Family pressure, Social comparison, Low self-esteem, Lack of emotional support, Identity crisis, Phone addiction, Suicidal thoughts.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-2-solutions-to-display-the-following-8-solution-points-using-checkmark-icons-or-numbered-steps-safe-emotional-support-system-anonymous-communication-non-judgmental-listening-access-to-mental-health-guidance-real-human-connection-like-minded-community-professional-therapist-access-24-7-support-availability",
+      "title": "Update Section 2 (Solutions) to display the following 8 solution points using checkmark icons or numbered steps: Safe emotional support system, Anonymous communication, Non-judgmental listening, Access to mental health guidance, Real human connection, Like-minded community, Professional therapist access, 24/7 support availability.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-3-introducing-voxa-to-describe-voxa-with-the-following-points-inside-and-around-the-phone-mockup-placeholder-a-safe-and-anonymous-emotional-support-platform-connects-people-in-real-time-built-for-lonely-and-struggling-youth-focused-on-human-connection-not-algorithms-a-digital-safe-space-to-speak-freely-replace-any-novamind-specific-ui-inside-the-phone-mockup-with-voxa-themed-placeholder-content-e-g-anonymous-chat-interface-mood-check-in",
+      "title": "Update Section 3 (Introducing VOXA) to describe VOXA with the following points inside and around the phone mockup placeholder: 'A safe and anonymous emotional support platform', 'Connects people in real-time', 'Built for lonely and struggling youth', 'Focused on human connection, not algorithms', 'A digital safe space to speak freely'. Replace any NovaMind-specific UI inside the phone mockup with VOXA-themed placeholder content (e.g., anonymous chat interface, mood check-in).",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-4-how-voxa-solves-these-problems-to-display-the-following-7-solution-mechanics-as-feature-cards-or-list-items-with-icons-provides-instant-anonymous-chat-call-connects-users-with-real-people-online-removes-fear-of-judgment-offers-therapist-consultation-option-encourages-emotional-expression-builds-meaningful-conversations-creates-a-supportive-community",
+      "title": "Update Section 4 (How VOXA Solves These Problems) to display the following 7 solution mechanics as feature cards or list items with icons: Provides instant anonymous chat/call, Connects users with real people online, Removes fear of judgment, Offers therapist consultation option, Encourages emotional expression, Builds meaningful conversations, Creates a supportive community.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-5-voxa-features-to-display-the-following-9-features-as-responsive-grid-cards-with-icons-and-short-descriptions-real-time-online-user-connection-anonymous-username-login-system-connect-with-verified-therapists-therapist-profiles-booking-system-call-and-messaging-feature-refresh-real-time-online-users-like-minded-people-matching-mood-based-connection-option-secure-and-private-conversations-subscription-system-for-therapists",
+      "title": "Update Section 5 (VOXA Features) to display the following 9 features as responsive grid cards with icons and short descriptions: Real-time online user connection, Anonymous username login system, Connect with verified therapists, Therapist profiles & booking system, Call and messaging feature, Refresh real-time online users, Like-minded people matching, Mood-based connection option, Secure and private conversations, Subscription system for therapists.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-6-how-we-made-voxa-to-display-the-following-6-development-focus-areas-with-icons-designed-for-youth-mental-health-needs-built-with-real-time-backend-system-secure-authentication-system-user-privacy-focused-architecture-simple-and-minimal-ui-ux-scalable-infrastructure-planning-replace-the-previous-tech-stack-grid-react-node-js-aws-etc-with-voxa-relevant-technologies-appropriate-for-the-described-architecture",
+      "title": "Update Section 6 (How We Made VOXA) to display the following 6 development focus areas with icons: Designed for youth mental health needs, Built with real-time backend system, Secure authentication system, User privacy-focused architecture, Simple and minimal UI/UX, Scalable infrastructure planning. Replace the previous tech-stack grid (React, Node.js, AWS, etc.) with VOXA-relevant technologies appropriate for the described architecture.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-7-future-goals-upcoming-features-roadmap-to-show-current-live-features-on-the-left-top-and-the-following-8-upcoming-features-on-the-right-bottom-ai-emotional-assistant-video-call-support-group-support-rooms-mood-tracking-dashboard-daily-mental-wellness-content-anonymous-community-forums-international-expansion-mobile-app-global-launch",
+      "title": "Update Section 7 (Future Goals & Upcoming Features) roadmap to show current live features on the left/top and the following 8 upcoming features on the right/bottom: AI emotional assistant, Video call support, Group support rooms, Mood tracking dashboard, Daily mental wellness content, Anonymous community forums, International expansion, Mobile app global launch.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-8-potential-revenue-to-display-the-following-7-revenue-model-items-using-bar-or-visual-chart-representations-therapist-subscription-model-premium-user-subscription-commission-on-therapy-sessions-featured-therapist-promotion-mental-wellness-partnerships-scalable-global-market-high-demand-in-youth-segment",
+      "title": "Update Section 8 (Potential & Revenue) to display the following 7 revenue model items using bar or visual chart representations: Therapist subscription model, Premium user subscription, Commission on therapy sessions, Featured therapist promotion, Mental wellness partnerships, Scalable global market, High demand in youth segment.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-9-more-information-about-voxa-to-display-the-following-6-platform-attributes-as-info-cards-or-highlight-blocks-replacing-the-existing-team-testimonials-faq-structure-focused-on-loneliness-depression-support-safe-private-and-secure-platform-youth-centered-design-real-time-connection-system-built-for-emotional-healing-vision-to-reduce-global-loneliness-keep-the-faq-accordion-if-it-can-be-adapted-with-voxa-relevant-questions",
+      "title": "Update Section 9 (More Information About VOXA) to display the following 6 platform attributes as info cards or highlight blocks, replacing the existing team/testimonials/FAQ structure: Focused on loneliness & depression support, Safe, private, and secure platform, Youth-centered design, Real-time connection system, Built for emotional healing, Vision to reduce global loneliness. Keep the FAQ accordion if it can be adapted with VOXA-relevant questions.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-section-10-voxa-links-to-display-the-two-prototype-links-as-clickable-cta-buttons-or-styled-link-cards-https-voicelink-replit-app-and-https-voxalink-lovable-app-label-them-clearly-e-g-try-voxa-prototype-1-and-try-voxa-prototype-2-retain-the-newsletter-signup-form-and-social-media-links-updating-any-novamind-references-to-voxa",
+      "title": "Update Section 10 (VOXA Links) to display the two prototype links as clickable CTA buttons or styled link cards: https://voicelink.replit.app and https://voxalink.lovable.app/. Label them clearly (e.g., 'Try VOXA Prototype 1' and 'Try VOXA Prototype 2'). Retain the newsletter signup form and social media links, updating any NovaMind references to VOXA.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-app-tsx-section-metadata-array-and-any-global-references-to-replace-all-occurrences-of-novamind-with-voxa-across-section-titles-ids-aria-labels-and-the-page-title-in-index-html",
+      "title": "Update the App.tsx section metadata array and any global references to replace all occurrences of 'NovaMind' with 'VOXA' across section titles, IDs, aria labels, and the page title in index.html.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-save-the-uploaded-voxa-logo-image-white-abstract-v-shaped-mark-with-purple-shadow-on-black-background-as-a-static-asset-at-frontend-public-assets-generated-voxa-logo-png-and-render-it-in-the-hero-section-herosection-tsx-in-place-of-the-current-svg-sound-wave-icon-displayed-at-an-appropriate-size-e-g-64-64-px-next-to-the-voxa-wordmark",
+      "title": "Save the uploaded VOXA logo image (white abstract V-shaped mark with purple shadow on black background) as a static asset at frontend/public/assets/generated/voxa-logo.png and render it in the Hero section (HeroSection.tsx) in place of the current SVG sound-wave icon, displayed at an appropriate size (e.g., 64×64 px) next to the 'VOXA' wordmark.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-also-display-the-voxa-logo-image-voxa-logo-png-in-the-sticky-navigation-bar-alongside-the-voxa-brand-name-replacing-any-existing-svg-icon-used-there-at-a-small-size-appropriate-for-a-navbar-e-g-32-32-px",
+      "title": "Also display the VOXA logo image (voxa-logo.png) in the sticky Navigation bar alongside the 'VOXA' brand name, replacing any existing SVG icon used there, at a small size appropriate for a navbar (e.g., 32×32 px).",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update all section content to reflect VOXA branding and topics: youth mental health problems, anonymous support solutions, VOXA app intro, features, tech, future goals, revenue, and prototype links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Use uploaded image as the VOXA app logo on the landing page",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "NovaMind",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

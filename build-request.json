@@ -1,0 +1,62 @@
+{
+  "kind": "build_request",
+  "title": "Use uploaded image as VOXA app logo",
+  "projectName": "VOXA",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-29",
+      "text": "Save the uploaded VOXA logo image (white abstract V-shaped mark with purple shadow on black background) as a static asset at frontend/public/assets/generated/voxa-logo.png and render it in the Hero section (HeroSection.tsx) in place of the current SVG sound-wave icon, displayed at an appropriate size (e.g., 64×64 px) next to the 'VOXA' wordmark.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Use this as app logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded logo image is saved as frontend/public/assets/generated/voxa-logo.png",
+        "The Hero section displays the logo image instead of the previous SVG icon",
+        "The logo is visually aligned next to the 'VOXA' text heading",
+        "The logo renders correctly on both desktop and mobile viewports",
+        "The previous sound-wave SVG icon is removed from the Hero section"
+      ]
+    },
+    {
+      "id": "REQ-30",
+      "text": "Also display the VOXA logo image (voxa-logo.png) in the sticky Navigation bar alongside the 'VOXA' brand name, replacing any existing SVG icon used there, at a small size appropriate for a navbar (e.g., 32×32 px).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Use this as app logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The navigation bar shows the voxa-logo.png image next to the 'VOXA' text",
+        "The logo is scaled appropriately for the navbar (approximately 32×32 px)",
+        "Any previous SVG brand icon in the navbar is removed",
+        "The navbar layout remains intact and responsive on mobile"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "The logo image must be served as a static asset from frontend/public/assets/generated/, not through the backend"
+  ],
+  "nonGoals": [
+    "Redesigning or altering the uploaded logo image",
+    "Changing any other section content or branding text",
+    "Adding Internet Identity login"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Crop to tight bounds around the white abstract V-shaped mark with purple shadow, removing the black background, and export with a transparent background (IMG_20260208_191015_825.webp > voxa-logo.dim_256x256.png)"
+    ]
+  }
+}
